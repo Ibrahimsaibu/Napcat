@@ -18,7 +18,7 @@ function Banner({ post }: { post: Post }) {
             />
           </div>
           <div className="flex-1">
-            <h1 className=" md:text-[36px] text-xl font-bold text-[#121926] md:leading-[58px] line-clamp-3">
+            <h1 className=" md:text-[36px] text-xl font-bold text-[#121926] md:leading-[58px] line-clamp-4">
               {post.title}
             </h1>
             <p className="text-sm mt-4 font-normal text-[#4B5565]">
