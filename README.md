@@ -1,4 +1,4 @@
-#Blog created with Next.js, TailwindCss and Sanity CMS
+Blog created with Next.js, TailwindCss and Sanity CMS
 This is a blog template built with Next.js and Sanity CMS. The blog has a responsive design and features the following functionality:
 
 Homepage with a list of blog posts
