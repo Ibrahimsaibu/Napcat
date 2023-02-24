@@ -67,14 +67,13 @@ async function Post({ params: { slug } }: Props) {
               })}
             </p>
           </div>
-          <div className="relative rounded-lg border border-[#E8D2FF]">
+          <div className="relative rounded-lg border border-[#E8D2FF] w-full lg:h-96 h-52">
             {post.mainImage && (
               <Image
                 src={urlFor(post.mainImage.asset._ref).url()}
                 alt={post.author.name}
-                width={600}
-                height={300}
-                className="object-cover  lg:object-center rounded-lg w-full h-96"
+                fill
+                className="object-center  lg:object-cover rounded-lg  w-full lg:h-96 h-52"
               />
             )}
           </div>
