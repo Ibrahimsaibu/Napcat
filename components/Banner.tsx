@@ -7,17 +7,18 @@ function Banner({ post }: { post: Post }) {
   return (
     <section className="sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl px-4 mx-auto md:my-10 my-6">
       <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
-        <div className="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0 md:items-start justify-between font-bold cursor-pointer py-5 mb-10">
-          <div className="relative md:h-80 h-64 md:w-2/5 w-full">
+        <div className="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0 md:items-start justify-between font-bold cursor-pointer py-4  mb-10 ">
+          <div className="relative md:w-2/5 w-full">
             <Image
               src={urlFor(post.mainImage.asset._ref).url()}
               alt={post.author.name}
-              fill
-              className=" rounded-lg"
+              width={500}
+              height={303}
+              className="object-cover lg:object-center rounded-lg h-full "
             />
           </div>
           <div className="flex-1">
-            <h1 className="lg:text-[48px] md:text-[36px] text-xl font-bold text-[#121926] md:leading-[58px] line-clamp-5">
+            <h1 className=" md:text-[36px] text-xl font-bold text-[#121926] md:leading-[58px] line-clamp-3">
               {post.title}
             </h1>
             <p className="text-sm mt-4 font-normal text-[#4B5565]">
