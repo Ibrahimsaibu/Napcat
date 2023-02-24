@@ -1,31 +1,47 @@
-<<<<<<< HEAD
-# napcat-blog
-=======
-# Next.js + Tailwind CSS Example
+Blog created with Next.js, TailwindCss and Sanity CMS
+This is a blog template built with Next.js and Sanity CMS. The blog has a responsive design and features the following functionality:
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Homepage with a list of blog posts
+Individual blog post pages with a title, date, author, and content
+Navigation bar with links to the homepage and categories
+Category pages with a list of blog posts in that category
+Search functionality
+Getting Started
+Prerequisites
+To run this project, you will need to have Node.js installed on your machine.
 
-## Deploy your own
+Installation
+Clone this repository to your local machine:
+bash
+Copy code
+git clone https://github.com/Ibrahimsaibu/Napcat.git
+Navigate to the project directory:
+bash
+Copy code
+cd napcat
+Install the dependencies:
+Copy code
+npm install
+Create a .env file in the root of the project and add the following environment variables:
+makefile
+Copy code
+SANITY_DATASET=your-dataset-name
+SANITY_PROJECT_ID=your-project-id
+Start the development server:
+Copy code
+npm run dev
+Open your browser and navigate to http://localhost:3000.
+Configuration
+Sanity CMS
+To use your own Sanity CMS backend, you will need to create a new project in the Sanity Dashboard and replace the values of SANITY_PROJECT_ID and SANITY_DATASET in the .env file with your own.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+You can also customize the schema of your blog in the schemas directory. After making changes, run npm run update-schema to update the schema in Sanity.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Styling
+This project uses Tailwind CSS for styling. You can customize the design of the blog by editing the tailwind.config.js file.
 
-## How to use
+Deployment
+To deploy the blog, you can use a platform like Vercel or Netlify. Simply link your repository to your preferred platform and follow their deployment instructions.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
->>>>>>> master
+Contributing
+If you find a bug or have a feature request, please open an issue or submit a pull request. Contributions are always welcome!
